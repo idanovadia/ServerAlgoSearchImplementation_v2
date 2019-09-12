@@ -45,7 +45,7 @@ public class DepthFirstSearch extends ASearchAlgo {
             }
             neighbors.clear();
         }
-        return null;
+        return createSol(expansionGraph,begin);
     }
 
     public String getName() {

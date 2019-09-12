@@ -48,7 +48,7 @@ public class AStar extends ASearchAlgo {
             }
             neighbors.clear();
         }
-        return null;
+        return createSol(expansionGraph,begin);
     }
 
 
