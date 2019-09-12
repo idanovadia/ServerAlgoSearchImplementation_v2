@@ -27,5 +27,4 @@ public class MazeController {
         return mazeService.genKruskalMaze(obj);
     }
 
-
 }
