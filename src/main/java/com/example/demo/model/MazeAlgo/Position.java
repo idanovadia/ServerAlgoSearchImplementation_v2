@@ -1,6 +1,10 @@
 package com.example.demo.model.MazeAlgo;
 
 
+/**
+ * present position in the board
+ * the current place the search algo is there
+ */
 public class Position {
     private int row;
     private int col;

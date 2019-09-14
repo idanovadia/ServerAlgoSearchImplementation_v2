@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+
+/**
+ * This class present the solution of board / maze to send back to client
+ * have expansionGraph and direct sol
+ */
 public class Solution {
 
     private List<AState> expansionGraph;
@@ -14,6 +19,10 @@ public class Solution {
         sol = new ArrayList<AState>();
     }
 
+    /**
+     * reverse the list of sol
+     * @param state
+     */
     public void generateSol(AState state){
         while (state.getFather()!=null){
             sol.add(sol.size(),state);

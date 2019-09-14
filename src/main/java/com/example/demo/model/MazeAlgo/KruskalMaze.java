@@ -5,6 +5,11 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
+/**
+ * generate maze by Implementation Kruskal algorithem
+ */
+
+
 public class KruskalMaze extends AMazeGenerator{
 
     ArrayList<Position> walls;

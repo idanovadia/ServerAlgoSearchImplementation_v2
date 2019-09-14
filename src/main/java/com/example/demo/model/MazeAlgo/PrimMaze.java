@@ -3,9 +3,13 @@ package com.example.demo.model.MazeAlgo;
 import java.util.ArrayList;
 import java.util.Random;
 
+
+/**
+ * generate maze by Implementation Prim algorithem
+ */
+
+
 public class PrimMaze extends AMazeGenerator {
-
-
 
     public PrimMaze(String [][] board) {
         this.maze = new Maze(board);
@@ -15,9 +19,7 @@ public class PrimMaze extends AMazeGenerator {
 
     }
 
-
     /**
-     *
      * @return maze
      * <p>
      * by Prim alg

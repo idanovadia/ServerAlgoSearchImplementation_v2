@@ -5,6 +5,13 @@ import java.util.ArrayList;
 
 import static java.lang.Integer.parseInt;
 
+/**
+ * Params for doing Search
+ * board to search on it
+ * start and end - from where to where
+ * weight [][] if some point in the array are diff in the weight
+ */
+
 public class Params {
 
     private JSONObject positions;
@@ -38,7 +45,9 @@ public class Params {
     }
 
 
-
+    /**
+     * set the board as AState board
+     */
     private void AStateArray() {
         for (int i = 0; i <boardS.length ; i++) {
             for (int j = 0; j <boardS[0].length ; j++) {
@@ -46,6 +55,8 @@ public class Params {
             }
         }
     }
+
+
     private void AStateArrayWeight() {
         for (int i = 0; i <board.length ; i++) {
             for (int j = 0; j <board[0].length ; j++) {
@@ -54,6 +65,12 @@ public class Params {
         }
     }
 
+    /**
+     * check all the possible neighbors of a State
+     * up , down , right , left
+     * @param state
+     * @return list of neighbors
+     */
     public ArrayList<AState> getAllPossibleStates(AState state){
         neighbors = new ArrayList<AState>();
         int x = parseInt(state.getX());
@@ -65,6 +82,12 @@ public class Params {
         return neighbors;
     }
 
+    /**
+     * check etch neighbor if it legal
+     * mean if it in the board
+     * @param x
+     * @param y
+     */
     private void checkPossibleNeighbors(int x,int y) {
         if(x>=0 && x <board.length && y>=0 && y<board[0].length){
             neighbors.add(board[x][y]);

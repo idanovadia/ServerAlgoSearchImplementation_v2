@@ -7,6 +7,10 @@ import com.example.demo.model.ArrayFunc.Solution;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * BreadthFirstSearch Algorithm implantation
+ */
+
 public class BreadthFirstSearch extends ASearchAlgo {
 
     AState begin;

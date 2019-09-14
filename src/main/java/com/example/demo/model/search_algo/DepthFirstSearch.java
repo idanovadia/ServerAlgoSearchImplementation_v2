@@ -6,6 +6,11 @@ import com.example.demo.model.ArrayFunc.Solution;
 
 import java.util.Stack;
 
+
+/**
+ * DepthFirstSearch Algorithm implantation
+ */
+
 public class DepthFirstSearch extends ASearchAlgo {
 
 

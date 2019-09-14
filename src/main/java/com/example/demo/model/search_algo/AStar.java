@@ -8,6 +8,11 @@ import java.util.PriorityQueue;
 
 import static java.lang.Integer.parseInt;
 
+
+/**
+ * A* Algorithm implantation
+ */
+
 public class AStar extends ASearchAlgo {
 
 
@@ -56,6 +61,12 @@ public class AStar extends ASearchAlgo {
         return "A*";
     }
 
+    /**
+     * The heuristic that use for solving
+     * @param a
+     * @param b
+     * @return
+     */
     private double ManhetenDistance(AState a, AState b){
         return Math.pow((parseInt(a.getX())-parseInt(b.getX())),2)+Math.pow((parseInt(a.getY())-parseInt(b.getY())),2);
     }

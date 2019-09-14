@@ -10,6 +10,10 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
+/**
+ * example of clien in java for testing
+ */
+
 public class JsonConn {
 
     public JsonConn() {

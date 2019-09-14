@@ -6,6 +6,13 @@ import com.example.demo.model.Server.Handler.MazeHandler.PrimHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
+/**
+ * Using as maze generate algorithm's services
+ * send the application to gene maze to specific handler that handle it
+ */
+
+
 @Service
 public class MazeService {
 

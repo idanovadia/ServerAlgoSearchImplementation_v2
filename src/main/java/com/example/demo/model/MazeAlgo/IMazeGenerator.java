@@ -1,5 +1,9 @@
 package com.example.demo.model.MazeAlgo;
 
+/**
+ * what functions need to create maze generator
+ */
+
 public interface IMazeGenerator {
 
     /**

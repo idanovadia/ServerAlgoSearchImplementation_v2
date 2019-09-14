@@ -2,6 +2,10 @@ package com.example.demo.model.ArrayFunc;
 
 
 /**
+ * This class present a State in the array
+ * state include {x,y} , AState father  , content (what the array[x][y] contain )
+ * implements Comparable<AState> for comparing between two AState objects
+ *
  * 0 - EMPTY ROAD
  * 1 - WALL (CANT GO THERE )
  */
@@ -34,7 +38,11 @@ public class AState implements Comparable<AState> {
     }
 
 
-
+    /**
+     * comparing between two AStates
+     * @param employee
+     * @return
+     */
     public int compareTo(AState employee) {
         if(this.getSumDis() > employee.getSumDis()) {
             return 1;

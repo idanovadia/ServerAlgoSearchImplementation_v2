@@ -5,8 +5,21 @@ import org.json.JSONObject;
 
 import java.util.List;
 
+/**
+ * This class manipulate json object to data structure and opposite.
+ * the main use of it is get and send json object by the spring server
+ *
+ * Those functions maintain how the json objects need to get from and sent to the client .
+ */
+
 public class ArrayToJson {
 
+
+    /**
+     * use to build json object of board to send back to the client
+     * @param array
+     * @return
+     */
     public JSONObject generateJsonArray(String[][] array){
         JSONArray ja = new JSONArray();
         for (int i = 0; i <array.length ; i++) {
@@ -21,6 +34,13 @@ public class ArrayToJson {
         return new JSONObject().put("array",ja);
     }
 
+    /**
+     * use to build a board from json obj that get from the client
+     * @param row
+     * @param col
+     * @param jsonObject
+     * @return
+     */
     public String [][] JsonToArray(int row , int col ,JSONObject jsonObject){
         JSONArray array = jsonObject.getJSONArray("array");
         String [][] tmp = new String[row][col];
@@ -33,6 +53,13 @@ public class ArrayToJson {
         return tmp;
     }
 
+
+    /**
+     * make list of Astate to json
+     *
+     * @param list
+     * @return
+     */
     private JSONArray generateJsonList(List<AState> list){
         JSONArray ja = new JSONArray();
             for (int j = 0; j <list.size() ; j++) {
@@ -46,6 +73,11 @@ public class ArrayToJson {
         return ja;
     }
 
+    /**
+     * using to make the expansion and sol lists to json objects to send back to clint
+     * @param solution
+     * @return
+     */
     public JSONObject SolToJson(Solution solution){
         JSONObject object = new JSONObject();
         object.put("expansionGraph",generateJsonList(solution.getExpansionGraph()));

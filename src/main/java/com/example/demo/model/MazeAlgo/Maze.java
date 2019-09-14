@@ -2,6 +2,11 @@ package com.example.demo.model.MazeAlgo;
 
 import java.util.Random;
 
+/**
+ * This class contain maze vars
+ * what maze need to and its main functions
+ */
+
 public class Maze {
 
     private String [][] board;
@@ -11,6 +16,10 @@ public class Maze {
         initMaze();
     }
 
+    /**
+     * init board
+     * @return
+     */
     public String[][] initMaze(){
 
         for (int i = 0; i < board.length; i++) {

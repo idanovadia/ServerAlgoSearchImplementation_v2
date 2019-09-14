@@ -2,6 +2,11 @@ package com.example.demo.model.MazeAlgo;
 
 import java.util.ArrayList;
 
+
+/**
+ * implement {@link IMazeGenerator}
+ * and add more function for using
+ */
 public abstract class AMazeGenerator implements IMazeGenerator {
     Maze maze;
 
